@@ -198,3 +198,95 @@ span {
     box-shadow: 0 0 1.6rem green;
     transform: scale(1.1);
 }
+
+/*    About
+================================*/
+
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--second-bg-color);
+}
+
+.about .heading {
+    text-align: start;
+}
+
+.about-img img {
+    width: 30vw;
+    border: .2rem solid var(--main-color);
+    border-radius: 50%;
+    box-shadow: 0 0 2.5rem var(--main-color);
+    cursor: pointer;
+    transition: .4s ease;
+    animation: floatImage 4s ease-in-out infinite;
+}
+
+.about-img img:hover {
+    box-shadow: 0 0 2.5rem var(--main-color),
+                0 0 3.5rem var(--main-color),
+                0 0 4.5rem var(--main-color);
+}
+
+@keyframes floatImage {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-2.4rem);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.about-content {
+    padding: 0 4rem;
+}
+
+.about-content h2 {
+    line-height: 1.2;
+}
+
+.about-content h3 {
+    font-size: 3rem;
+}
+
+.about-content p {
+    margin: 2rem 0 3rem;
+}
+
+/*    Skills
+================================================== */
+
+
+.skills h3 {
+    display: inline-flex;
+    margin-bottom: 2rem;
+    border-bottom: .2rem solid var(--main-color);
+}
+
+.content-skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    text-align: center;
+}
+
+.item-skill span,
+.item-skill i {
+    display: block;
+    color: var(--text-color);
+    font-weight: 500;
+}
+
+.item-skill {
+    padding: 1rem;
+}
+
+.item-skill i {
+    font-size: 5rem;
+}
