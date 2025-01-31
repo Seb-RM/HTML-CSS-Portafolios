@@ -290,3 +290,69 @@ span {
 .item-skill i {
     font-size: 5rem;
 }
+
+/*        Servicios
+================================= */
+
+.services h2 {
+    margin-bottom: 2rem;
+}
+
+.service-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    gap: 2rem;
+}
+
+.service-item {
+    flex: 1 1 30rem;
+    background-color: var(--second-bg-color);
+    padding: 6rem 2rem 6rem;
+    border-radius: 2rem;
+    box-shadow: 0 0 .5rem var(--main-color);
+    transition: all .5s ease;
+}
+
+.service-item:hover {
+    outline: .1rem solid var(--main-color);
+    cursor: pointer;
+    transform: translateY(-.5rem) scale(1.02);
+}
+
+.service-item i {
+    font-size: 6rem;
+    color: var(--main-color);
+}
+
+.service-item h3 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 1rem 0
+}
+
+.service-item p {
+    margin:  1rem 0;
+}
+
+.btn-now {
+    display: inline-block;
+    font-size: 2.2rem;
+    line-height: 1.2rem;
+    font-weight: 700;
+    padding: .7rem 0;
+    color: var(--text-color);
+    border-bottom: .2rem solid var(--other-color);
+}
+
+.btn-now i {
+    vertical-align: middle;
+    font-size: 2.5rem;
+    margin-left: .5rem;
+}
+
+.btn-now:hover {
+    border-bottom-color: var(--main-color);
+}
+
