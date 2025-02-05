@@ -37,6 +37,14 @@ section {
     padding: 10rem 10% 2rem;
 }
 
+@media (max-width: 768px) {
+
+    section {
+        min-height: auto;
+        padding: 11rem 1% 2rem;
+    }
+}
+
 /*  Utilidades
 ==================================== */
 
@@ -157,6 +165,22 @@ span {
     border-radius: 2rem;
 }
 
+@media (max-width: 1200px) {
+    .home {
+        justify-content: center;
+        background-color: var(--bg-color);
+        background-image: none;
+    }
+
+    .home-content {
+        width: 100%;
+        padding: 0;
+        margin-left: 0;
+        border: none;
+        text-align: center;
+    }
+}
+
 .home-content h1 {
     font-size: 5rem;
     font-weight: 700;
@@ -172,6 +196,21 @@ span {
 .home-content p {
     font-size: 1.8rem;
     margin-bottom: 2rem;
+}
+
+@media (max-width: 768px) {
+
+    .home-content {
+        font-size: 3rem;
+    }
+
+    .home-content h3 {
+        font-size: 2.5rem;
+    }
+
+    .home-content p {
+        font-size: 1.6rem;
+    }
 }
 
 /*   Redes Sociales
@@ -262,6 +301,46 @@ span {
     animation: floatImage 4s ease-in-out infinite;
 }
 
+@media (max-width: 1200px) {
+    .about {
+        flex-direction: column;
+    }
+
+    .about .heading {
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .about h3 {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 1200px) {
+    
+    .about-img {
+        text-align: center;
+    }
+
+    .about-img img {
+        order: 1;
+        animation: none;
+    }
+}
+
+@media (max-width: 992px) {
+    .about img {
+        width: 50%;
+    }
+}
+
+@media (max-width: 768px) {
+    .about img {
+        width: 60%;
+    }
+}
+
 .about-img img:hover {
     box-shadow: 0 0 2.5rem var(--main-color),
                 0 0 3.5rem var(--main-color),
@@ -284,6 +363,14 @@ span {
 
 .about-content {
     padding: 0 4rem;
+}
+
+@media (max-width: 1200px) {
+    .about-content {
+        order: 2;
+        text-align: center;
+        padding: 0 1rem;
+    }
 }
 
 .about-content h2 {
