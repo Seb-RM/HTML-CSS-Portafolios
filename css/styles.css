@@ -41,7 +41,7 @@ section {
 
     section {
         min-height: auto;
-        padding: 11rem 1% 2rem;
+        padding: 11rem 3% 2rem;
     }
 }
 
@@ -499,7 +499,7 @@ span {
 }
 
 .portfolio-item {
-    width: 45%;
+    flex: 1 1 30rem;
     background-color: var(--bg-color);
     border-radius: 1rem;
     border: .1rem solid transparent;
@@ -592,6 +592,21 @@ span {
 .contact form:hover {
     transform: scale(1.03);
     cursor: pointer;
+}
+
+@media (max-width: 1200px) {
+    .contact form {
+        width: 50%;
+    }
+}
+@media (max-width: 992px) {
+    .img-contact {
+        display: none;
+    }
+
+    .contact form {
+        width: 100%;
+    }
 }
 
 form input,
